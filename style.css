@@ -1,0 +1,35 @@
+/*
+==============================
+BOKMARKS
+==============================
+*/
+.bookmarks{
+    padding:5px;
+    
+    border-radius: 10%;
+    text-align: center;
+    display: inline-block;
+}
+ .bookmarks a{
+    font-size:75px;
+    margin: px ;
+    padding:5px, auto, 0, auto;
+    color:black;
+    transition:.15s;
+    vertical-align: top;
+ }
+ .bookmarks a:hover{
+    font-size:90px;
+    position:relative;
+ }
+ ol, ul{
+    list-style: none;
+ }
+ 
+ .title{
+    font-family: 'Xanh Mono', monospace;
+    text-align: center;
+    display: inline-block
+
+ }
+ 
