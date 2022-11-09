@@ -20,17 +20,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload="startTime()">
         <header>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/41d88n87d63/chicago/?unit=us" data-label_1="CHICAGO" data-label_2="weather" data-font="Open Sans" data-icons="Climacons Animated" data-shadow="#b1b1b1" data-accent="rgba(255, 255, 255, 0.15)" data-textcolor="#ffffff" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-suncolor="#fff768" data-mooncolor="#d8d2ff" data-cloudcolor="#ffffff" data-raincolor="#c1f3ff" data-snowcolor="#bfcad9" >CHICAGO weather</a>
+            <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </header>
             <h1 class="title">Hello Jackie</h1>
             <!-- GOOGLE SEARCH -->
-    <form action="https://google.com/search" method="get" target="_blank">
-    <input type="hidden" name="sitesearch"/>
-    <input type="text" name="q" placeholder="search..." class="search-bar"/>
-    <input type="submit" value="GO" class="submit-button">
-    </form>
-    
-        </header>
+            <form action="https://google.com/search" method="get" target="_blank">
+                <input type="hidden" name="sitesearch"/>
+                <input type="text" name="q" placeholder="search..." class="search-bar"/>
+                <input type="submit" value="GO" class="submit-button">
+            </form>
+            <div id="clock"></div> 
+            <div class="weekly">
+                <textarea placeholder="Monday..." id="note" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Tuesday..." id="note" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Wednesday..." id="note" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Thursday..." id="note" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Friday..." id="note" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Saturday/Sunday..." id="note" onkeyup="autoSave()"></textarea>
+            </div>  
 
     
 
@@ -41,8 +53,5 @@
         
         <script src="myScripts.js" async defer></script>
     </body>
-    <body onload="startTime()">
-
-        <div id="clock"></div>
         
 </html>
