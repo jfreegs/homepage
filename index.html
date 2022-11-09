@@ -11,28 +11,29 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <h1 class="title">Hello Jackie</h1>
-            <section class="bookmarks">
-                <ul>
-                    <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-                        <i class="fas fa-envelope"></i>
-                    </a></li>
-                    <li><a href="https://classroom.google.com/">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </a></li>
-                    <li><a href="https://open.spotify.com/">
-                        <i class="fab fa-spotify"></i>
-                    </a></li>
-                </ul>
-            </section>
+            <!-- GOOGLE SEARCH -->
+    <form action="https://google.com/search" method="get" target="_blank">
+    <input type="hidden" name="sitesearch"/>
+    <input type="text" name="q" placeholder="search..." class="search-bar"/>
+    <input type="submit" value="GO" class="submit-button">
+    </form>
+    
         </header>
+
+    
+
 
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -40,4 +41,8 @@
         
         <script src="myScripts.js" async defer></script>
     </body>
+    <body onload="startTime()">
+
+        <div id="clock"></div>
+        
 </html>
