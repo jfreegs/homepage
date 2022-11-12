@@ -16,13 +16,62 @@ function startTime() {
    }
    
    //POST-IT NOTE (JAVASCRIPT)
-if (localStorage["note"]) {
-    var note = localStorage["note"];
-    document.getElementById("note").value = note;
+if (localStorage["monday"]) {
+    var note = localStorage["monday"];
+    document.getElementById("monday").value = note;
    }
    
    function autoSave() {
-    var note = document.getElementById("note").value;
-    localStorage.setItem("note", note);
+    var note = document.getElementById("monday").value;
+    localStorage.setItem("monday", note);
+   }
+
+   if (localStorage["tuesday"]) {
+    var note = localStorage["tuesday"];
+    document.getElementById("tuesday").value = note;
    }
    
+   function autoSave() {
+    var note = document.getElementById("tuesday").value;
+    localStorage.setItem("tuesday", note);
+   }
+   
+   if (localStorage["wednesday"]) {
+    var note = localStorage["wednesday"];
+    document.getElementById("wednesday").value = note;
+   }
+   
+   function autoSave() {
+    var note = document.getElementById("wednesday").value;
+    localStorage.setItem("wednesday", note);
+   }
+
+   if (localStorage["thursday"]) {
+    var note = localStorage["thursday"];
+    document.getElementById("thursday").value = note;
+   }
+   
+   function autoSave() {
+    var note = document.getElementById("thursday").value;
+    localStorage.setItem("thursday", note);
+   }
+
+   if (localStorage["friday"]) {
+    var note = localStorage["friday"];
+    document.getElementById("friday").value = note;
+   }
+   
+   function autoSave() {
+    var note = document.getElementById("friday").value;
+    localStorage.setItem("friday", note);
+   }
+
+   if (localStorage["sat"]) {
+    var note = localStorage["sat"];
+    document.getElementById("sat").value = note;
+   }
+   
+   function autoSave() {
+    var note = document.getElementById("sat").value;
+    localStorage.setItem("sat", note);
+   }

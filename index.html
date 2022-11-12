@@ -22,9 +22,9 @@
     </head>
     <body onload="startTime()">
         <header>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/41d88n87d63/chicago/?unit=us" data-label_1="CHICAGO" data-label_2="weather" data-font="Open Sans" data-icons="Climacons Animated" data-shadow="#b1b1b1" data-accent="rgba(255, 255, 255, 0.15)" data-textcolor="#ffffff" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-suncolor="#fff768" data-mooncolor="#d8d2ff" data-cloudcolor="#ffffff" data-raincolor="#c1f3ff" data-snowcolor="#bfcad9" >CHICAGO weather</a>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/41d88n87d63/chicago/" data-label_1="CHICAGO" data-label_2="weather" data-font="Open Sans" data-icons="Climacons Animated" data-theme="candy" data-basecolor="rgba(255, 255, 255, 0)" data-shadow="rgba(255, 255, 255, 0)" data-accent="rgba(255, 255, 255, 0)" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-suncolor="#ffe999" data-mooncolor="#cfcbe2" data-cloudfill="rgba(255, 255, 255, 0.15)" data-raincolor="#c5f4ff" data-snowcolor="#deeffb" >CHICAGO weather</a>
             <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
         </header>
             <h1 class="title">Hello Jackie</h1>
@@ -36,12 +36,12 @@
             </form>
             <div id="clock"></div> 
             <div class="weekly">
-                <textarea placeholder="Monday..." id="note" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Tuesday..." id="note" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Wednesday..." id="note" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Thursday..." id="note" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Friday..." id="note" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Saturday/Sunday..." id="note" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Monday..." id="monday" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Tuesday..." id="tuesday" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Wednesday..." id="wednesday" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Thursday..." id="thursday" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Friday..." id="friday" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Saturday/Sunday..." id="sat" onkeyup="autoSave()"></textarea>
             </div>  
 
     
