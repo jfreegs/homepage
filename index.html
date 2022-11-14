@@ -22,10 +22,10 @@
     </head>
     <body onload="startTime()">
         <header>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/41d88n87d63/chicago/" data-label_1="CHICAGO" data-label_2="weather" data-font="Open Sans" data-icons="Climacons Animated" data-theme="candy" data-basecolor="rgba(255, 255, 255, 0)" data-shadow="rgba(255, 255, 255, 0)" data-accent="rgba(255, 255, 255, 0)" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-suncolor="#ffe999" data-mooncolor="#cfcbe2" data-cloudfill="rgba(255, 255, 255, 0.15)" data-raincolor="#c5f4ff" data-snowcolor="#deeffb" >CHICAGO weather</a>
-            <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/41d88n87d63/chicago/?unit=us" data-label_1="CHICAGO" data-label_2="weather" data-font="Open Sans" data-icons="Climacons Animated" data-theme="candy" data-basecolor="rgba(255, 255, 255, 0)" data-shadow="rgba(255, 255, 255, 0)" data-accent="rgba(255, 255, 255, 0)" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-suncolor="#ffe999" data-mooncolor="#cfcbe2" data-cloudfill="rgba(255, 255, 255, 0.15)" data-raincolor="#c5f4ff" data-snowcolor="#deeffb" >CHICAGO weather</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
         </header>
             <h1 class="title">Hello Jackie</h1>
             <!-- GOOGLE SEARCH -->
@@ -45,18 +45,20 @@
                 <a href="https://classroom.google.com/">
                     <i class="fas fa-chalkboard-teacher"></i>
                 </a>
-                    <i class="fab fa-spotify"></i>
+                    <a href="https://open.spotify.com/">
+                        <i class="fab fa-spotify"></i>
+                    </a>
                 <a href="https://www.photopea.com/">
                     <i class="fas fa-camera-retro"></i>
                 </a>
             </section>
             <div class="weekly">
-                <textarea placeholder="Monday..." id="monday" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Tuesday..." id="tuesday" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Wednesday..." id="wednesday" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Thursday..." id="thursday" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Friday..." id="friday" onkeyup="autoSave()"></textarea>
-                <textarea placeholder="Saturday/Sunday..." id="sat" onkeyup="autoSave()"></textarea>
+                <textarea placeholder="Monday..." class="post-it" id="monday" onkeyup="saveMonday()"></textarea>
+  <textarea placeholder="Tuesday..." class="post-it" id="tuesday" onkeyup="saveTuesday()"></textarea>
+  <textarea placeholder="Wednesday..." class="post-it" id="wednesday" onkeyup="saveWednesday()"></textarea>
+  <textarea placeholder="Thursday..." class="post-it" id="thursday" onkeyup="saveThursday()"></textarea>
+  <textarea placeholder="Friday..." class="post-it" id="friday" onkeyup="saveFriday()"></textarea>
+  <textarea placeholder="Sat/Sun..." class="post-it" id="weekend" onkeyup="saveWeekend()"></textarea>
             </div>  
 
     
